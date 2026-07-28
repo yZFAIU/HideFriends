@@ -1,0 +1,32 @@
+name: Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Theos
+        run: |
+          brew install fakeroot dpkg ldid
+          git clone --recursive https://github.com/theos/theos.git "$THEOS"
+        env:
+          THEOS: ${{ github.workspace }}/theos
+
+      - name: Build .deb
+        run: |
+          export THEOS="${{ github.workspace }}/theos"
+          make clean
+          make package FINALPACKAGE=1
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HideFriends-deb
+          path: packages/*.deb

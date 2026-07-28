@@ -1,0 +1,9 @@
+Package: com.yzfaiu.hidefriends
+Name: HideFriends (隐藏好友)
+Version: 1.0.0
+Description: 抖音隐藏好友独立插件，作者 yZFAIU。仅供学习交流，请在 24 小时内自觉删除。
+Author: yZFAIU
+Maintainer: yZFAIU
+Section: Tweaks
+Depends: firmware (>= 14.0), mobilesubstrate
+Architecture: iphoneos-arm
