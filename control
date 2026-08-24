@@ -1,0 +1,9 @@
+Package: com.hf.hidefriends
+Name: HideFriends
+Version: 1.4.0
+Architecture: iphoneos-arm64
+Description: 隐藏抖音好友相关入口与推荐（仅供学习交流）
+Maintainer: HF <hf@local>
+Author: HF <hf@local>
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)

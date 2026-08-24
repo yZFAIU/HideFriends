@@ -1,0 +1,20 @@
+# Theos 构建产物
+.theos/
+packages/
+obj/
+.build/
+
+# 编译中间文件
+*.o
+*.d
+*.dSYM
+
+# 预编译安装包（建议作为 GitHub Release 资产，而非进仓库）
+*.deb
+
+# 编辑器 / 系统
+.DS_Store
+*.swp
+*~
+.idea/
+.vscode/
