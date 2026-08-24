@@ -1,5 +1,7 @@
 # HideFriends
 
+本人时间有限一些做得不好的各位大佬多指点，全部界面Hook由ai完成
+
 隐藏抖音（Aweme）好友相关内容的 iOS 越狱插件，**纯离线工具**，不上传任何数据到服务器。
 
 基于 [Theos](https://theos.dev/) / Logos 开发，仅供学习交流。
