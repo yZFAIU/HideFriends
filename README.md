@@ -1,4 +1,4 @@
-# HideFriends
+# HideFriends 隐藏好友(密友)
 
 本人时间有限一些做得不好的各位大佬多指点，全部界面Hook由ai完成
 
