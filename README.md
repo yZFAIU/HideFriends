@@ -1,8 +1,24 @@
 # HideFriends 隐藏好友(密友)
 
 本人时间有限后期更新较慢
-## 🤝 贡献者/开发者/思路提供
-- [@wanqi88](https://github.com/wanqi88) 
+## 作者
+
+<table>
+  <tr>
+    <td align="center">
+      <a href=" ">
+        < img src="https://github.com/yZFAIU.png" width="60" height="60" style="border-radius:50%" alt="yZFAIU"/><br/>
+        <b>yZFAIU</b>
+      </a >
+    </td>
+    <td align="center">
+      <a href="https://github.com/wanqi88">
+        < img src="https://github.com/wanqi88.png" width="60" height="60" style="border-radius:50%" alt="wanqi88"/><br/>
+        <b>wanqi88</b>
+      </a >
+    </td>
+  </tr>
+</table>
 
 
 隐藏抖音（Aweme）好友相关内容的 iOS 越狱插件，**纯离线工具**，不上传任何数据到服务器。
