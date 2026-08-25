@@ -3,19 +3,21 @@
 本人时间有限后期更新较慢
 ## 作者
 
+## 作者
+
 <table>
   <tr>
     <td align="center">
-      <a href=" ">
-        < img src="https://github.com/yZFAIU.png" width="60" height="60" style="border-radius:50%" alt="yZFAIU"/><br/>
+      <a href="https://github.com/yZFAIU">
+        <img src="https://github.com/yZFAIU.png" width="60" height="60" style="border-radius:50%" alt="yZFAIU"/><br/>
         <b>yZFAIU</b>
-      </a >
+      </a>
     </td>
     <td align="center">
       <a href="https://github.com/wanqi88">
-        < img src="https://github.com/wanqi88.png" width="60" height="60" style="border-radius:50%" alt="wanqi88"/><br/>
+        <img src="https://github.com/wanqi88.png" width="60" height="60" style="border-radius:50%" alt="wanqi88"/><br/>
         <b>wanqi88</b>
-      </a >
+      </a>
     </td>
   </tr>
 </table>
