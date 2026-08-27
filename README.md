@@ -1,5 +1,11 @@
 # HideFriends 隐藏好友（密友）
 
+<p align="center">
+  <a href="https://github.com/yZFAIU"><img src="https://github.com/yZFAIU.png?size=96" width="64" height="64" alt="yZFAIU" title="yZFAIU"></a>
+  &nbsp;
+  <a href="https://github.com/wanqi88"><img src="https://github.com/wanqi88.png?size=96" width="64" height="64" alt="wanqi88" title="wanqi88"></a>
+</p>
+
 > 隐藏抖音（Aweme）好友相关内容的 iOS 越狱插件 · **纯离线工具，不上传任何数据到服务器**
 >
 > 基于 [Theos](https://theos.dev/) / Logos 开发，仅供学习交流
@@ -82,12 +88,7 @@ make package SCHEME=roothide # roothide
 
 ## 下载
 
-- [Releases](https://github.com/yZFAIU/HideFriends/releases)：已发布 `v1.4.0`（rootful）、`v1.0.0`
-
-## 作者
-
-- [yZFAIU](https://github.com/yZFAIU)
-- [wanqi88](https://github.com/wanqi88)
+- [Releases](https://github.com/yZFAIU/HideFriends/releases)：已发布 `v1.4.0`（rootful）、`v1.0.0`、`v1.40.0`
 
 ## 免责声明
 
