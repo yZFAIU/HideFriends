@@ -1,44 +1,31 @@
-# HideFriends 隐藏好友(密友)
+# HideFriends 隐藏好友（密友）
 
-本人时间有限后期更新较慢
-只在39.9.0 iOS16.0 13标准版 测试 其他版本用户uid藏起来可能会不一样就会失效
+> 隐藏抖音（Aweme）好友相关内容的 iOS 越狱插件 · **纯离线工具，不上传任何数据到服务器**
+>
+> 基于 [Theos](https://theos.dev/) / Logos 开发，仅供学习交流
 
-## 作者
+## 简介
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/yZFAIU">
-        <img src="https://github.com/yZFAIU.png" width="60" height="60" style="border-radius:50%" alt="yZFAIU"/><br/>
-        <b>yZFAIU</b>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/wanqi88">
-        <img src="https://github.com/wanqi88.png" width="60" height="60" style="border-radius:50%" alt="wanqi88"/><br/>
-        <b>wanqi88</b>
-      </a>
-    </td>
-  </tr>
-</table>
+HideFriends 是一款 iOS 越狱插件，用于在抖音中隐藏指定好友（黑名单）的相关内容，覆盖好友推荐、消息 / 私信入口、关注 / 粉丝 / 互关列表、限时日常、聊天会话列表等场景。插件完全本地运行，不采集、不上传任何用户数据。
 
+## 兼容性
 
-隐藏抖音（Aweme）好友相关内容的 iOS 越狱插件，**纯离线工具**，不上传任何数据到服务器。
-
-基于 [Theos](https://theos.dev/) / Logos 开发，仅供学习交流。
+- 开发测试环境：抖音 **39.9.0** / iOS **16.0** / iPhone 13（标准版）
+- 其他版本抖音的 UID 存储方式可能存在差异，黑名单匹配可能失效，请以实际设备测试为准
+- 支持越狱环境：**rootful** / **rootless**（iOS 15+）/ **roothide**
 
 ## 功能
 
-- 黑名单隐藏：按抖音号 / UID / 昵称精确匹配，隐藏黑名单好友的相关内容
-- 覆盖场景：
+- **黑名单隐藏**：按抖音号 / UID / 昵称精确匹配，隐藏黑名单好友的相关内容
+- **覆盖场景**：
   - 好友推荐（AFD 系列视图）
   - 消息 / 私信入口（AWEIM 系列视图）
   - 关注 / 粉丝 / 互关列表
   - 消息页「限时日常」窗口
   - 聊天会话列表
-- 隐藏方式：整行隐藏（内容 + 高度归零），复用滚动不闪出、不误伤
-- 「添加好友」页：自动识别互关好友，一键加入黑名单
-- 设置页：总开关 / 添加好友 / 关于，统一深色主题
+- **隐藏方式**：整行隐藏（内容 + 行高归零），列表复用滚动不闪出、不误伤
+- **「添加好友」页**：自动识别互关好友，一键加入黑名单
+- **设置页**：总开关 / 添加好友 / 关于，统一深色主题
 
 ## 架构
 
@@ -52,6 +39,7 @@
 | `HFBlacklistViewController.m` | 添加好友页 |
 | `HFUserSelectViewController.m` | 从互关好友选择页 |
 | `HFUtils.m/.h` | 工具函数 |
+| `HFConstants.h` | 全局常量 |
 | `AwemeHeaders.h` | 抖音类前向声明 |
 
 ## 编译
@@ -72,9 +60,17 @@
 
 产物在 `packages/` 目录，生成 `.deb` 安装包。
 
+也可以直接使用 Theos 构建：
+
+```bash
+make package                 # 默认（rootful）
+make package SCHEME=rootless # rootless
+make package SCHEME=roothide # roothide
+```
+
 ## 安装
 
-1. 用 Sileo / 包管理器安装 `packages/*.deb`，或 `dpkg -i` 安装
+1. 通过 Sileo 等包管理器安装 `packages/*.deb`，或 `dpkg -i` 安装
 2. 重启抖音：`killall Aweme`
 3. 在抖音任意界面**双指长按**呼出设置页
 
@@ -83,6 +79,15 @@
 1. 设置页 → 总开关（默认开启）
 2. 添加好友 → 从互关好友选择，或手动输入抖音号 / UID
 3. 黑名单好友会自动在推荐流、消息、关注 / 粉丝 / 互关列表中被隐藏
+
+## 下载
+
+- [Releases](https://github.com/yZFAIU/HideFriends/releases)：已发布 `v1.4.0`（rootful）、`v1.0.0`
+
+## 作者
+
+- [yZFAIU](https://github.com/yZFAIU)
+- [wanqi88](https://github.com/wanqi88)
 
 ## 免责声明
 
