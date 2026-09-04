@@ -115,10 +115,6 @@ make package SCHEME=roothide # roothide
 2. 添加好友 → 从互关好友选择，或手动输入抖音号 / UID
 3. 黑名单好友会自动在推荐流、消息、关注 / 粉丝 / 互关列表中被隐藏
 
-## 下载
-
-- [Releases](https://github.com/yZFAIU/HideFriends/releases)：已发布 `v1.4.0`（rootful）、`v1.0.0`、`v1.40.0`
-
 ## 免责声明
 
 本插件仅供学习、研究 iOS 逆向工程与 Theos 开发使用，请勿用于任何违反抖音用户协议或法律法规的用途。使用本插件产生的一切后果由使用者自行承担。
